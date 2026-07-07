@@ -1,3 +1,57 @@
+select
+     e.event_time,
+     e.event_type,
+     p.product,
+     p.brand,
+     p.price
+from events e
+join products p
+ON e.product_id = p.product_id
+limit 10;
+
+
+select
+    p.product,
+    count(*) as total_events
+from events e
+join products p
+on e.product_id = p.product_id
+group by p.product
+order by total_events desc
+limit 10;
+
+
+
+select
+     e.event_time,
+     e.event_type,
+     p.product,
+     p.brand,
+     p.price
+from events e
+join products p
+ON e.product_id = p.product_id
+limit 10;
+
+
+
+
+select
+     e.event_time,
+     e.event_type,
+     u.user_id,
+     p.product,
+     p.brand,
+     p.price
+from events e
+join users u
+on e.user_id = u.user_id
+join products p
+on e.product_id = p.product_id
+limit 10;
+
+
+
 SELECT
     p.product_id,
     p.product,
