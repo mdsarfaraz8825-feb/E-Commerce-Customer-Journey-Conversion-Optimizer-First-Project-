@@ -1,0 +1,36 @@
+# E-Commerce SQL Analysis
+
+## Project Overview
+This project analyzes customer behavior using SQL and MySQL.
+
+## Dataset
+- Customer Behavior Dataset
+- Cleaned using Python (Pandas)
+- Imported into MySQL
+
+## Database Tables
+- customer_behavior
+- events
+- products
+- users
+
+## SQL Analyses
+1. JOIN Queries
+2. Funnel Conversion Analysis
+3. Abandoned Products
+4. Repeat Purchase Analysis
+5. Average Order Value (AOV)
+6. Customer Lifetime Value (CLV)
+
+## SQL Optimization
+Indexes were created on:
+- user_id
+- product_id
+- event_type
+- event_time
+
+## Tools Used
+- Python
+- Jupyter Notebook
+- MySQL Workbench
+- GitHub
